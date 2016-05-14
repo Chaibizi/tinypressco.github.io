@@ -1,10 +1,8 @@
 excerpt_separator: ""
-pygments: true
-markdown: kramdown
-url: http://tinypressco.github.io
-title: TinyPress Blog
+url: http://dainmiller.github.io
+title: Ctrl-Dev
 email: miller.dain@gmail.com
-author: TinyPress & Dain Miller
-description: My awesome new site
-paginate: 3
+author: Dain Miller
+description: Ctrl-Dev
+paginate: 30
 google_analytics: 
