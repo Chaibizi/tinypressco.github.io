@@ -1,0 +1,10 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://tinypressco.github.io
+title: TinyPress Blog
+email: miller.dain@gmail.com
+author: TinyPress & Dain Miller
+description: My awesome new site
+paginate: 3
+google_analytics: 
