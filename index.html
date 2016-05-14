@@ -10,7 +10,15 @@ layout: default
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
           <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
           <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
+          <p class="post-summary" style="color: #5c5e6a;font-size: 17px;font-size: 1.2rem;margin-top: 23px;">{{ post.summary }}</p>
+          
+          <ul class="meta-tag-list" style="float: left;margin-top: -17px;">
+            {% for tag in post.tags %}
+              <li class="meta-tag-item">
+                <a href="#" style="font-size: 15px;font-weight: 300;">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </a>
       </div>
     {% endfor %}
@@ -18,5 +26,5 @@ layout: default
 
   {% include pagination.html %}
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
